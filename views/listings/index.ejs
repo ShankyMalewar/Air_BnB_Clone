@@ -30,12 +30,13 @@
 
 <div id="filters">
   <% const categories = [ { name: 'Trending', icon: 'fa-fire' }, { name:
-  'Rooms', icon: 'fa-bed' }, { name: 'Iconic Cities', icon: 'fa-mountain-city'
+  'Cottage', icon: 'fa-bed' }, { name: 'Iconic Cities', icon: 'fa-mountain-city'
   }, { name: 'Mountains', icon: 'fa-mountain' }, { name: 'Castles', icon:
-  'fa-fort-awesome' }, { name: 'Pools', icon: 'fa-person-swimming' }, { name:
+  'fa-chess-rook' }, { name: 'Pools', icon: 'fa-person-swimming' }, { name:
   'Camping', icon: 'fa-campground' }, { name: 'Farms', icon: 'fa-cow' }, { name:
-  'Arctic', icon: 'fa-snowflake' }, { name: 'Domes', icon: 'fa-igloo' }, { name:
-  'Boats', icon: 'fa-ship' }, ]; %> <% for (let c of categories) { %>
+  'Arctic', icon: 'fa-snowflake' }, { name: 'Forests', icon: 'fa-tree' }, {
+  name: 'Beaches', icon: 'fa-umbrella-beach' }, ]; %> <% for (let c of
+  categories) { %>
   <div class="filter">
     <a class="nav-link" href="/listings?category=<%= c.name %>">
       <i class="fa-solid <%= c.icon %> fa-lg"></i>
@@ -104,4 +105,3 @@
     }
   });
 </script>
-
